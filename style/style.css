@@ -1,0 +1,189 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container-grid{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+
+.container-grid .main{
+    
+    width: 90%;
+    margin: 10%;
+    display: grid;
+    justify-content: center;
+    
+    
+    
+}
+
+
+
+.card{
+    -webkit-perspective: 800px;
+    perspective: 800px;
+    
+}
+
+.card-content{
+    height: 680px;
+    width: 600px;
+   
+    background-image: url(../images/fondito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:absolute;
+	text-align: center;
+	color: #EBABA0;
+    box-sizing: border-box;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items:center;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 15px;
+}
+
+
+.atras{
+    transform: rotateY(180deg);
+
+    background-image: url(../images/Diseño\ sin\ título.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+.adelante{
+    background-image: url(../images/fondito\ -\ Editado.png);
+    background-size: cover;
+}
+.card:hover .card-content{
+    transform: rotateY(180deg);
+}
+.title{
+    font-size: 33px;
+    margin-top: 50px;
+    margin-bottom:0px;
+}
+.description{
+    background-image: url(../images/9c774fe68730d084194567bfdfb5634c\ \(1\)\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    height: 150px;
+    padding: 70px 110px;
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+.mujer{
+    height: 150px;
+
+}
+
+
+.computadora{
+    height: 180px;
+    position: relative;
+    padding-top: 40px;
+    
+}
+
+.link{
+    margin-top: 90px;
+    padding-top: 108px;
+    
+    display: flex;
+    justify-content: center;
+
+}
+
+.link > p >a{
+    text-decoration: none;
+    color: rgb(44, 43, 43);
+    font-size: 28px;
+   
+    line-height: 55px;
+}
+
+.pintada{
+    background-image: url(../images/cc.png);
+    background-position: center;
+  
+    background-size: cover;
+}
+
+@media screen and (max-width: 700px) {
+    .card-content{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        font-size: 19px;
+        margin-top: 0px;
+        padding-top: 9px;
+    }
+
+    .description{
+        height: 190px;
+        font-size: 8px;
+        padding: 0px;
+    }
+    .description > p{
+        padding: 50px 30px;
+    }
+    .mujer{
+        margin-top: 35px;
+        height: 100px;
+    }
+    .link{
+        padding-top: 50px
+    }
+    .link > p >a{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .compu{
+        padding-top: 0px;
+
+    }
+    .computadora{
+        height:140px;
+    }
+
+    .adelante, .atras{
+        height: 400px;
+    }
+
+}
